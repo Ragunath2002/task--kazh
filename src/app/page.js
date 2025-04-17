@@ -6053,7 +6053,7 @@ export default function Home() {
                                         <div className="banner-item-two__thumb position-absolute bottom-0 wow bounceInUp"
                                             data-wow-duration="1s" data-tilt="" data-tilt-max="12" data-tilt-speed="500"
                                             data-tilt-perspective="5000" data-tilt-scale="1.06"
-                                            style={{willChange: "transform;", transition: "500ms cubic-bezier(0.03, 0.98, 0.52, 0.99);", transform: "perspective(5000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);", visibility: "visible;", animationDuration: "1s;", animationName: "bounceInUp;"}}>
+                                            style={{willChange: "transform", transition: "500ms cubic-bezier(0.03, 0.98, 0.52, 0.99)", transform: "perspective(5000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)", visibility: "visible", animationDuration: "1s", animationName: "bounceInUp"}}>
 
                                             <a href="http://127.0.0.1:8000/products" tabIndex={-1}>
                                                 {/* <picture> */}
@@ -6073,16 +6073,16 @@ export default function Home() {
 
                                         </div>
                                     </div>
-                                    <div className="banner-item-two" style={{width:" 100%;", display: "inline-block;"}}>
+                                    <div className="banner-item-two" style={{width:" 100%", display: "inline-block"}}>
 
                                         {/* <!-- Content Section --> */}
                                         <div className="banner-item-two__content">
                                             <span className="text-white mb-8 h6 wow bounceInDown"
-                                                style={{visibility: "visible;", animationName: "bounceInDown;"}}>Starting
+                                                style={{visibility: "visible", animationName: "bounceInDown"}}>Starting
                                                 at only <b>$250</b></span>
 
                                             <h3 className="banner-item-two__title bounce text-white wow bounceInLeft"
-                                                style={{visibility: "visible", animationName: "bounceInLeft;"}}>
+                                                style={{visibility: "visible", animationName: "bounceInLeft"}}>
                                                 Get The Sound You Sound For Less
                                             </h3>
 
@@ -6115,7 +6115,7 @@ export default function Home() {
                                         <div className="banner-item-two__thumb position-absolute bottom-0 wow bounceInUp"
                                             data-wow-duration="1s" data-tilt="" data-tilt-max="12" data-tilt-speed="500"
                                             data-tilt-perspective="5000" data-tilt-scale="1.06"
-                                            style={{willChange: "transform;", transform: "perspective(5000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); ",visibility: "visible", animationDuration: "1s", animationName:" bounceInUp;"}}>
+                                            style={{willChange: "transform", transform: "perspective(5000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) ",visibility: "visible", animationDuration: "1s", animationName:" bounceInUp"}}>
 
                                             <a href="http://127.0.0.1:8000/products" tabIndex={0}>
                                                 <picture>
@@ -6146,39 +6146,39 @@ export default function Home() {
 
 
               {/* <!-- ============================ promotional banner Start ========================== --> */}
-              <section class="Ad_product_one promotional-banner pt-20">
-            <div class="container container-lg">
-                <div class="row gy-4 ">
-                    <div class="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                        <div class="position-relative rounded-16 overflow-hidden z-1 p-32">
+              <section className="Ad_product_one promotional-banner pt-20">
+            <div className="container container-lg">
+                <div className="row gy-4 ">
+                    <div className="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+                        <div className="position-relative rounded-16 overflow-hidden z-1 p-32">
 
                             <img src="https://ecbackend.cazhier.com/storage/ad-product/promo-bg-img1-1.png"
-                                class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
+                                className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
                                 loading="lazy"/>
 
-                            <div class="flex-between flex-wrap gap-16">
-                                <div class="">
-                                    <span class="text-heading text-sm mb-8">Latest Deal</span>
+                            <div className="flex-between flex-wrap gap-16">
+                                <div className="">
+                                    <span className="text-heading text-sm mb-8">Latest Deal</span>
 
 
 
 
 
-                                    <h6 class="mb-0">
+                                    <h6 className="mb-0">
                                         <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal"
-                                            target="_blank" class="product_name_ad text-heading">iPhone 16 5G Mob..</a>
+                                            target="_blank" className="product_name_ad text-heading">iPhone 16 5G Mob..</a>
                                     </h6>
 
                                     <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal"
                                         target="_blank"
-                                        class="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
+                                        className="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
                                         Shop Now 1
-                                        <span class="icon text-md d-flex"><i class="ph ph-plus"></i></span>
+                                        <span className="icon text-md d-flex"><i className="ph ph-plus"></i></span>
                                     </a>
 
                                 </div>
 
-                                <div class="pe-xxl-4">
+                                <div className="pe-xxl-4">
 
 
 
@@ -6186,7 +6186,7 @@ export default function Home() {
                                         target="_blank">
                                         <img src="https://ecbackend.cazhier.com/storage/products-2/71csc3m2agl-sl1500.jpg"
                                             alt="iPhone 16 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal"
-                                            class="dynamic-product-image"/>
+                                            className="dynamic-product-image"/>
                                     </a>
 
                                 </div>
@@ -6194,36 +6194,36 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                        <div class="position-relative rounded-16 overflow-hidden z-1 p-32">
+                    <div className="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+                        <div className="position-relative rounded-16 overflow-hidden z-1 p-32">
 
                             <img src="https://ecbackend.cazhier.com/storage/ad-product/promo-bg-img2-1.png"
-                                class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
+                                className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
                                 loading="lazy"/>
 
-                            <div class="flex-between flex-wrap gap-16">
-                                <div class="">
-                                    <span class="text-heading text-sm mb-8">Get 60% off</span>
+                            <div className="flex-between flex-wrap gap-16">
+                                <div className="">
+                                    <span className="text-heading text-sm mb-8">Get 60% off</span>
 
 
 
 
 
-                                    <h6 class="mb-0">
+                                    <h6 className="mb-0">
                                         <a href="http://127.0.0.1:8000/products/samsung-galaxy-s25-ultra-5g-ai-smartphone-titanium-gray-12gb-ram-256gb-storage-200mp-camera-s-pen-included-long-battery-life"
-                                            target="_blank" class="product_name_ad text-heading">Samsung Galaxy S..</a>
+                                            target="_blank" className="product_name_ad text-heading">Samsung Galaxy S..</a>
                                     </h6>
 
                                     <a href="http://127.0.0.1:8000/products/samsung-galaxy-s25-ultra-5g-ai-smartphone-titanium-gray-12gb-ram-256gb-storage-200mp-camera-s-pen-included-long-battery-life"
                                         target="_blank"
-                                        class="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
+                                        className="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
                                         Shop Now 2
-                                        <span class="icon text-md d-flex"><i class="ph ph-plus"></i></span>
+                                        <span className="icon text-md d-flex"><i className="ph ph-plus"></i></span>
                                     </a>
 
                                 </div>
 
-                                <div class="pe-xxl-4">
+                                <div className="pe-xxl-4">
 
 
 
@@ -6231,7 +6231,7 @@ export default function Home() {
                                         target="_blank">
                                         <img src="https://ecbackend.cazhier.com/storage/products-2/71rs4aer71l-sl1500.jpg"
                                             alt="Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Gray, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life"
-                                            class="dynamic-product-image"/>
+                                            className="dynamic-product-image"/>
                                     </a>
 
                                 </div>
@@ -6239,36 +6239,36 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
-                        <div class="position-relative rounded-16 overflow-hidden z-1 p-32">
+                    <div className="col-lg-4 col-sm-6 px-10 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+                        <div className="position-relative rounded-16 overflow-hidden z-1 p-32">
 
                             <img src="https://ecbackend.cazhier.com/storage/ad-product/promo-bg-img3-1.png"
-                                class="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
+                                className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
                                 loading="lazy"/>
 
-                            <div class="flex-between flex-wrap gap-16">
-                                <div class="">
-                                    <span class="text-heading text-sm mb-8">Start From $250</span>
+                            <div className="flex-between flex-wrap gap-16">
+                                <div className="">
+                                    <span className="text-heading text-sm mb-8">Start From $250</span>
 
 
 
 
 
-                                    <h6 class="mb-0">
+                                    <h6 className="mb-0">
                                         <a href="http://127.0.0.1:8000/products/quick-heal-total-security-renewal-upgrade-gold-pack-1-user-3-years-email-delivery-in-1-hour-no-cd-existing-quick-heal-single-user-subscription-needed"
-                                            target="_blank" class="product_name_ad text-heading">Quick Heal | Tot..</a>
+                                            target="_blank" className="product_name_ad text-heading">Quick Heal | Tot..</a>
                                     </h6>
 
                                     <a href="http://127.0.0.1:8000/products/quick-heal-total-security-renewal-upgrade-gold-pack-1-user-3-years-email-delivery-in-1-hour-no-cd-existing-quick-heal-single-user-subscription-needed"
                                         target="_blank"
-                                        class="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
+                                        className="product_button_ad d-inline-flex align-items-center gap-8 mt-16 text-heading text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-main-two-600 hover-border-main-two-600">
                                         Shop Now 3
-                                        <span class="icon text-md d-flex"><i class="ph ph-plus"></i></span>
+                                        <span className="icon text-md d-flex"><i className="ph ph-plus"></i></span>
                                     </a>
 
                                 </div>
 
-                                <div class="pe-xxl-4">
+                                <div className="pe-xxl-4">
 
 
 
@@ -6276,7 +6276,7 @@ export default function Home() {
                                         target="_blank">
                                         <img src="https://ecbackend.cazhier.com/storage/products-2/61kxwwz1l-l-sl1414.jpg"
                                             alt="Quick Heal | Total Security Renewal Upgrade Gold pack | 1 User | 3 years | Email Delivery in 1 Hour - no CD| Existing Quick Heal Single User Subscription Needed"
-                                            class="dynamic-product-image"/>
+                                            className="dynamic-product-image"/>
                                     </a>
 
                                 </div>
@@ -6289,23 +6289,23 @@ export default function Home() {
         </section>
         {/* <!-- ============================ promotional banner End ========================== --> */}
             {/* <!-- ========================= Deals Week Start ================================ --> */}
-            <section class="deals-weeek pt-20 overflow-hidden new ">
-            <div class="container container-lg ">
-                <div class="row px-10">
-                    <div class="border border-gray-100 p-10 rounded-16 bg-white">
+            <section className="deals-weeek pt-20 overflow-hidden new ">
+            <div className="container container-lg ">
+                <div className="row px-10">
+                    <div className="border border-gray-100 p-10 rounded-16 bg-white">
 
-                        <div class="section-heading mb-12">
-                            <div class="flex-between flex-wrap gap-8">
+                        <div className="section-heading mb-12">
+                            <div className="flex-between flex-wrap gap-8">
 
-                                <h5 class="mb-0 pl-5">
+                                <h5 className="mb-0 pl-5">
                                     Deal of The Day
 
                                 </h5>
-                                <div class="flex-align gap-16 animate_once
+                                <div className="flex-align gap-16 animate_once
                                     
                                     ">
                                     <a href="/products"
-                                        class="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">
+                                        className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">
                                         View All Deals
                                     </a>
 
@@ -6315,44 +6315,44 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div class="deal-week-box rounded-16 overflow-hidden flex-between position-relative z-1 mb-12">
+                        <div className="deal-week-box rounded-16 overflow-hidden flex-between position-relative z-1 mb-12">
                             <img src="https://ecbackend.cazhier.com/storage/ads/week-deal-bg-1.png" alt="bg card Image"
-                                class="position-absolute inset-block-start-0 inset-block-start-0 w-100 h-100 z-n1 object-fit-cover"/>
+                                className="position-absolute inset-block-start-0 inset-block-start-0 w-100 h-100 z-n1 object-fit-cover"/>
 
                             {/* <!-- left image  --> */}
-                            <div class="d-lg-block d-none ps-32 flex-shrink-0" data-aos="zoom-in">
+                            <div className="d-lg-block d-none ps-32 flex-shrink-0" data-aos="zoom-in">
                                 <img src="https://ecbackend.cazhier.com/storage/ads/week-deal-img1-1.png" alt="Left Image"/>
                             </div>
-                            <div class="deal-week-box__content px-sm-4 d-block w-100 text-center">
+                            <div className="deal-week-box__content px-sm-4 d-block w-100 text-center">
 
-                                <h6 class="mb-20 wow bounceIn" style={{visibility: "visible;", animationName: "bounceIn;"}}>Apple
+                                <h6 className="mb-20 wow bounceIn" style={{visibility: "visible", animationName: "bounceIn"}}>Apple
                                     AirPods Max, Over Ear Headphones</h6>
 
-                                <div class="countdown mt-20" id="countdown">
-                                    <ul class="countdown-list style-four flex-center flex-wrap">
+                                <div className="countdown mt-20" id="countdown">
+                                    <ul className="countdown-list style-four flex-center flex-wrap">
                                         <li
-                                            class="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span class="days">294</span> Days
+                                            className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
+                                            <span className="days">294</span> Days
                                         </li>
                                         <li
-                                            class="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span class="hours">7</span> Hours
+                                            className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
+                                            <span className="hours">7</span> Hours
                                         </li>
                                         <li
-                                            class="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span class="minutes">11</span> Min
+                                            className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
+                                            <span className="minutes">11</span> Min
                                         </li>
                                         <li
-                                            class="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span class="seconds">43</span> Sec
+                                            className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
+                                            <span className="seconds">43</span> Sec
                                         </li>
                                     </ul>
                                 </div>
 
                             </div>
                             {/* <!-- right image --> */}
-                            <div class="d-lg-block d-none flex-shrink-0 pe-xl-5 aos-init aos-animate" data-aos="zoom-in">
-                                <div class="me-xxl-5">
+                            <div className="d-lg-block d-none flex-shrink-0 pe-xl-5 aos-init aos-animate" data-aos="zoom-in">
+                                <div className="me-xxl-5">
                                     <img src="https://ecbackend.cazhier.com/storage/ads/week-deal-img2-1.png" alt="" />
                                 </div>
                             </div>
@@ -6362,502 +6362,502 @@ export default function Home() {
 
 
                         {/* <!-- code4 --> */}
-                        <div class="deals-week-slider-container">
+                        <div className="deals-week-slider-container">
                             <button type="button" id="deal-week-prev"
-                                class="slick-prev deal_leftarrow slick-arrow hlo flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
-                                <i class="ph ph-caret-left"></i>
+                                className="slick-prev deal_leftarrow slick-arrow hlo flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
+                                <i className="ph ph-caret-left"></i>
                             </button>
 
-                            <div class="deals-week-slider arrow-style-two pt-0">
+                            <div className="deals-week-slider arrow-style-two pt-0">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2" tabIndex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
                                                 aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
                                                 aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
-                                            <span class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                        <div className="product-card__price my-10">
+                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <button type="button" id="deal-week-next"
-                                class="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
-                                <i class="ph ph-caret-right"></i>
+                                className="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
+                                <i className="ph ph-caret-right"></i>
                             </button>
                         </div>
 
@@ -6867,393 +6867,393 @@ export default function Home() {
         </section>
        {/* <!-- ========================= Deals Week End ================================ --> */}
        {/* <!-- ========================= Top Selling Products Start ================================ --> */}
-    <section class="top_sellss top-selling-products pt-20 overflow-hidden">
-        <div class="container container-lg">
-            <div class="border border-gray-100 p-12 rounded-16 bg-white">
+    <section className="top_sellss top-selling-products pt-20 overflow-hidden">
+        <div className="container container-lg">
+            <div className="border border-gray-100 p-12 rounded-16 bg-white">
 
-                <div class="section-heading mb-10">
-                    <div class="flex-between flex-wrap gap-8">
-                        <h5 class="mb-0 ">
+                <div className="section-heading mb-10">
+                    <div className="flex-between flex-wrap gap-8">
+                        <h5 className="mb-0 ">
                             Top Selling Products
                         </h5>
-                        <div class="flex-align gap-16  animate_once
+                        <div className="flex-align gap-16  animate_once
                             
                             ">
                             <a href="#"
-                                class="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">View
+                                className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">View
                                 All Deals</a>
 
                         </div>
                     </div>
                 </div>
-                <div class="row g-12">
-                    <div class="col-md-4 aos-init aos-animate">
-                        <div class="position-relative rounded-30 overflow-hidden p-28 z-1 text-center">
+                <div className="row g-12">
+                    <div className="col-md-4 aos-init aos-animate">
+                        <div className="position-relative rounded-30 overflow-hidden p-28 z-1 text-center">
 
                             <img src="https://ecbackend.cazhier.com/themes/ecomm/images/bg/promo-bg-img1.png" alt=""
-                                class="position-absolute inset-block-start-0 inset-inline-start-0 z-n1 w-100 h-100"/>
+                                className="position-absolute inset-block-start-0 inset-inline-start-0 z-n1 w-100 h-100"/>
 
-                            <div class="py-xl-4">
-                                <h6><a class="mb-4 fw-semibold link text-line-2"
+                            <div className="py-xl-4">
+                                <h6><a className="mb-4 fw-semibold link text-line-2"
                                         href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal">iPhone
                                         16 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery
                                         Life. Works with AirPods; Teal</a></h6>
 
                                 <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal"
-                                    class="btn text-heading border-neutral-600 hover-bg-neutral-600 hover-text-white py-16 px-24 flex-center d-inline-flex rounded-pill gap-8 fw-medium"
-                                    tabindex="0">
+                                    className="btn text-heading border-neutral-600 hover-bg-neutral-600 hover-text-white py-16 px-24 flex-center d-inline-flex rounded-pill gap-8 fw-medium"
+                                    tabIndex="0">
 
-                                    <i class="ph ph-shopping-cart text-xl d-flex"></i>
+                                    <i className="ph ph-shopping-cart text-xl d-flex"></i>
                                 </a>
                             </div>
-                            <div class="d-md-block ">
+                            <div className="d-md-block ">
 
 
                                 <a
                                     href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal">
-                                    <img style={{maxHeight: "240px;"}}
+                                    <img style={{maxHeight: "240px"}}
                                         src="https://ecbackend.cazhier.com/storage/products-2/71csc3m2agl-sl1500.jpg"
                                         alt="iPhone 16 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal"/>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="topselling_product_container">
+                    <div className="col-md-8">
+                        <div className="topselling_product_container">
                             <button type="button" id="top-selling-prev"
-                                class="slick-prev deal_leftarrow slick-arrow hlo flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
-                                <i class="ph ph-caret-left"></i>
+                                className="slick-prev deal_leftarrow slick-arrow hlo flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
+                                <i className="ph ph-caret-left"></i>
                             </button>
 
 
 
-                            <div class="top-selling-product-slider arrow-style-two">
+                            <div className="top-selling-product-slider arrow-style-two">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="product-details-two.html"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative">
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
                                         </span>
                                         <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            class="w-auto max-w-unset"/>
+                                            className="w-auto max-w-unset"/>
                                     </a>
-                                    <div class="product-card__content mt-16">
-                                        <div class="flex-align gap-6">
-                                            <span class="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(17k)</span>
+                                    <div className="product-card__content mt-16">
+                                        <div className="flex-align gap-6">
+                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
                                         </div>
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" class="link text-line-2"
-                                                tabindex="0">Taylor
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
+                                            <a href="product-details-two.html" className="link text-line-2"
+                                                tabIndex="0">Taylor
                                                 Farms Broccoli Florets Vegetables</a>
                                         </h6>
-                                        <div class="flex-align gap-4">
-                                            <span class="text-tertiary-600 text-md d-flex"><i
-                                                    class="ph-fill ph-storefront"></i></span>
-                                            <span class="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                        <div className="flex-align gap-4">
+                                            <span className="text-tertiary-600 text-md d-flex"><i
+                                                    className="ph-fill ph-storefront"></i></span>
+                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
                                         </div>
-                                        <div class="mt-8">
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                        <div className="mt-8">
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="35"
                                                 aria-valuemin="0" aria-valuemax="100">
                                             </div>
-                                            <span class="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
+                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
                                         </div>
 
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
                                                 $28.99</span>
-                                            <span class="text-heading text-md fw-semibold ">$14.99 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span> </span>
+                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <button type="button" id="top-selling-next"
-                                class="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
-                                <i class="ph ph-caret-right"></i>
+                                className="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
+                                <i className="ph ph-caret-right"></i>
                             </button>
                         </div>
 
@@ -7264,77 +7264,77 @@ export default function Home() {
     </section>
     {/* <!-- ========================= Top Selling Products End ================================ --> */}
     
-    <!-- ========================= Trending Products Start ================================ -->
-    <section class="trending-productss pt-20 overflow-hidden">
-        <div class="container container-lg">
-            <div class="border border-gray-100 p-10 rounded-16 bg-white">
-                <div class="section-heading mb-10">
-                    <div class="flex-between flex-wrap mb-0">
-                        <h5 class=" mb-0 ">
+    {/* <!-- ========================= Trending Products Start ================================ --> */}
+    <section className="trending-productss pt-20 overflow-hidden">
+        <div className="container container-lg">
+            <div className="border border-gray-100 p-10 rounded-16 bg-white">
+                <div className="section-heading mb-10">
+                    <div className="flex-between flex-wrap mb-0">
+                        <h5 className=" mb-0 ">
                             Trending Products
 
                         </h5>
-                        <ul class=" mb-0 nav common-tab style-two nav-pills animate_once
+                        <ul className=" mb-0 nav common-tab style-two nav-pills animate_once
                             
                             " id="pills-tab" role="tablist"
                             data-ajax-url="http://127.0.0.1:8000/ajax/products?limit=8">
 
-                            <li class="nav-item" role="presentation">
+                            <li className="nav-item" role="presentation">
 
 
 
 
-                                <button class="nav-link active" id="all-tab" data-bs-toggle="pill"
+                                <button className="nav-link active" id="all-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All"
                                     aria-selected="true">
                                     All
                                 </button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
+                            <li className="nav-item" role="presentation">
 
 
 
 
-                                <button class="nav-link" id="featured-tab" data-bs-toggle="pill"
+                                <button className="nav-link" id="featured-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-Featured" type="button" role="tab"
-                                    aria-controls="pills-Featured" aria-selected="false" tabindex="-1">
+                                    aria-controls="pills-Featured" aria-selected="false" tabIndex="-1">
                                     Featured
                                 </button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
+                            <li className="nav-item" role="presentation">
 
 
 
 
-                                <button class="nav-link" id="on-sale-tab" data-bs-toggle="pill"
+                                <button className="nav-link" id="on-sale-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-On-sale" type="button" role="tab"
-                                    aria-controls="pills-On-sale" aria-selected="false" tabindex="-1">
+                                    aria-controls="pills-On-sale" aria-selected="false" tabIndex="-1">
                                     On sale
                                 </button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
+                            <li className="nav-item" role="presentation">
 
 
 
 
-                                <button class="nav-link" id="trending-tab" data-bs-toggle="pill"
+                                <button className="nav-link" id="trending-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-Trending" type="button" role="tab"
-                                    aria-controls="pills-Trending" aria-selected="false" tabindex="-1">
+                                    aria-controls="pills-Trending" aria-selected="false" tabIndex="-1">
                                     Trending
                                 </button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
+                            <li className="nav-item" role="presentation">
 
 
 
 
-                                <button class="nav-link" id="top-rated-tab" data-bs-toggle="pill"
+                                <button className="nav-link" id="top-rated-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-Top-rated" type="button" role="tab"
-                                    aria-controls="pills-Top-rated" aria-selected="false" tabindex="-1">
+                                    aria-controls="pills-Top-rated" aria-selected="false" tabIndex="-1">
                                     Top rated
                                 </button>
                             </li>
@@ -7342,63 +7342,63 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div class="trending-products-box rounded-16 overflow-hidden flex-between position-relative mb-10">
-                    <div class="d-md-block d-none ps-xxl-5 ps-md-4 aos-init aos-animate" data-aos="zoom-in"
+                <div className="trending-products-box rounded-16 overflow-hidden flex-between position-relative mb-10">
+                    <div className="d-md-block d-none ps-xxl-5 ps-md-4 aos-init aos-animate" data-aos="zoom-in"
                         data-aos-duration="800">
-                        <!-- <img src="https://ecbackend.cazhier.com/themes/ecomm/images/thumbs/trending-products-img1.png" alt=""> -->
+                        {/* <!-- <img src="https://ecbackend.cazhier.com/themes/ecomm/images/thumbs/trending-products-img1.png" alt=""> --> */}
                         <img src="https://ecbackend.cazhier.com/storage/ads/trending-products-img1.png"
-                            alt="bg card Image">
+                            alt="bg card Image"/>
                     </div>
-                    <div class="trending-products-box__content px-4 d-block w-100 text-center py-32 wow bounceIn"
-                        style="visibility: hidden; animation-name: none;">
-                        <!-- <h6 class="mb-0 trending-products-box__title">
+                    <div className="trending-products-box__content px-4 d-block w-100 text-center py-32 wow bounceIn"
+                        style={{visibility: "hidden", animationName: "none"}}>
+                        {/* <!-- <h6 className="mb-0 trending-products-box__title">
                             Laptop Pro 
-                            <span class="h4 mb-0 fw-semibold">
+                            <span className="h4 mb-0 fw-semibold">
                                 20%
                             </span>
                             off All Time On Order Now $980
-                        </h6> -->
-                        <h6 class="mb-0 trending-products-box__title">
+                        </h6> --> */}
+                        <h6 className="mb-0 trending-products-box__title">
                             Laptop Pro
-                            <span class="h4 mb-0 fw-semibold" style="font-weight: 600;"> <!-- Light bold style -->
+                            <span className="h4 mb-0 fw-semibold" style={{fontWeight: "600"}}> 
                                 20%
                             </span>
                             off All Time On Order Now $980
                         </h6>
                     </div>
-                    <div class="d-md-block d-none pe-xxl-5 me-xxl-5 pe-md-4 aos-init aos-animate" data-aos="zoom-in"
+                    <div className="d-md-block d-none pe-xxl-5 me-xxl-5 pe-md-4 aos-init aos-animate" data-aos="zoom-in"
                         data-aos-duration="800">
                         <img src="https://ecbackend.cazhier.com/storage/ads/trending-products-img2.png"
-                            alt="right Image">
+                            alt="right Image"/>
                     </div>
                 </div>
 
 
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-All" role="tabpanel"
-                        aria-labelledby="pills-All-tab" tabindex="0">
-                        <div class="row g-12">
+                <div className="tab-content" id="pills-tabContent">
+                    <div className="tab-pane fade show active" id="pills-All" role="tabpanel"
+                        aria-labelledby="pills-All-tab" tabIndex="0">
+                        <div className="row g-12">
 
 
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #9A3B00 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#9A3B00 !important"}}>
                                             Sale
 
 
@@ -7407,64 +7407,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/169"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                                class="link text-line-2" tabindex="0">Samsung 23 L Solo Microwave Oven
+                                                className="link text-line-2" tabIndex="0">Samsung 23 L Solo Microwave Oven
                                                 (MS23A3513AK/TL, Black, Auto Cook Programs, Child Safety Lock, Memory
                                                 Feature, Deodorization, Ceramic Enamel Cavity with 10 year warranty)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/sports-nike">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Sports@Nike</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Sports@Nike</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R8,990.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R8,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R8,990.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R8,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7472,24 +7472,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7498,64 +7500,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/168"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                                class="link text-line-2" tabindex="0">Vidiem Vogue 3-Burner Gas
+                                                className="link text-line-2" tabIndex="0">Vidiem Vogue 3-Burner Gas
                                                 Cooktop/Hob | World's First Fully Removable Burner Assembly | 10Mm
                                                 Toughened Glass | 5Mm Thick Pan Support | Manual Ignition - Black</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,250.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,250.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7563,24 +7565,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7589,64 +7593,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/167"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                                class="link text-line-2" tabindex="0">Vidiem Mixer Grinder 608 A
+                                                className="link text-line-2" tabIndex="0">Vidiem Mixer Grinder 608 A
                                                 Tusker|Mixer grinder 750 watt with 3 Jars &amp; 1 Juicer Mixer Grinder|4
                                                 Leakproof Jars with self-lock for wet &amp; dry spices, chutneys</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7654,24 +7658,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7680,63 +7684,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/166"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                                class="link text-line-2" tabindex="0">TCL 248 cm (98 inches) 4K Ultra HD
+                                                className="link text-line-2" tabIndex="0">TCL 248 cm (98 inches) 4K Ultra HD
                                                 Smart QD-Mini LED Google TV 98C755 (Black)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R164,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R164,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7744,31 +7748,31 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="https://ecbackend.cazhier.com/products/nr-250-steam-wallet-codedigital-code-email-delivery-within-2-hours"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/3792e6d9-e64d-48a4-b16c-304d325ac1e0-cr00800800-pt0-sx220-v1.jpeg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/3792e6d9-e64d-48a4-b16c-304d325ac1e0-cr00800800-pt0-sx220-v1.jpeg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #AC2200 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#AC2200 !important"}}>
                                             Hot
 
 
                                         </span>
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7777,63 +7781,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/165"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="https://ecbackend.cazhier.com/products/nr-250-steam-wallet-codedigital-code-email-delivery-within-2-hours"
-                                                class="link text-line-2" tabindex="0">INR 250 Steam Wallet Code(Digital
+                                                className="link text-line-2" tabIndex="0">INR 250 Steam Wallet Code(Digital
                                                 Code-Email Delivery within 2 hours)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R90.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R80.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R90.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R80.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7841,24 +7845,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/xbox-game-pass-ultimate-1-month-membership-digital-code"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71md9ggyf6l-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71md9ggyf6l-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7867,63 +7871,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/164"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/xbox-game-pass-ultimate-1-month-membership-digital-code"
-                                                class="link text-line-2" tabindex="0">Xbox Game Pass Ultimate : 1 Month
+                                                className="link text-line-2" tabIndex="0">Xbox Game Pass Ultimate : 1 Month
                                                 Membership (Digital Code)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R125.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R120.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R125.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R120.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -7931,24 +7935,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/far-cry-3-pc-game-dvd-for-windows"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/91o6fcnfxdl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/91o6fcnfxdl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -7957,63 +7961,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/163"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/far-cry-3-pc-game-dvd-for-windows"
-                                                class="link text-line-2" tabindex="0">Far Cry-3 Pc Game DVD For
+                                                className="link text-line-2" tabIndex="0">Far Cry-3 Pc Game DVD For
                                                 Windows</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R120.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R100.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R120.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R100.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8021,24 +8025,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/microsoft-windows-10-professional-8-gb-32bit64bit-english-intl-for-1-pc-laptop-user-32-and-64-bits-on-usb-30-included-full-retail-pack-multicolor"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/61jaihpn07l-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/61jaihpn07l-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #AC2200 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#AC2200 !important"}}>
                                             Hot
 
 
@@ -8047,64 +8051,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/162"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/microsoft-windows-10-professional-8-gb-32bit64bit-english-intl-for-1-pc-laptop-user-32-and-64-bits-on-usb-30-included-full-retail-pack-multicolor"
-                                                class="link text-line-2" tabindex="0">Microsoft Windows 10 Professional
+                                                className="link text-line-2" tabIndex="0">Microsoft Windows 10 Professional
                                                 8 GB, 32Bit/64Bit English INTL For 1 PC Laptop/ User: 32 And 64 Bits On
                                                 USB 3.0 Included - Full Retail Pack, Multicolor</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R300.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R250.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R300.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R250.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8112,24 +8116,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/samsung-189-cm-75-inches-d-series-crystal-4k-vivid-pro-ultra-hd-smart-led-tv-ua75due77akxxl-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/81omhffs-hl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81omhffs-hl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8138,64 +8142,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/161"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/samsung-189-cm-75-inches-d-series-crystal-4k-vivid-pro-ultra-hd-smart-led-tv-ua75due77akxxl-black"
-                                                class="link text-line-2" tabindex="0">Samsung 189 cm (75 inches) D
+                                                className="link text-line-2" tabIndex="0">Samsung 189 cm (75 inches) D
                                                 Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA75DUE77AKXXL
                                                 (Black)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R199,999.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R195,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R199,999.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R195,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8203,24 +8207,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/sony-bravia-theatre-quad-ht-a9m2-premium-soundbar-system-with-360-ssm-wireless-multi-dimensional"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71dvqgjx0-l-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71dvqgjx0-l-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #9A3B00 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#9A3B00 !important"}}>
                                             Sale
 
 
@@ -8229,63 +8233,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/160"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/sony-bravia-theatre-quad-ht-a9m2-premium-soundbar-system-with-360-ssm-wireless-multi-dimensional"
-                                                class="link text-line-2" tabindex="0">Sony Bravia Theatre Quad (HT-A9M2)
+                                                className="link text-line-2" tabIndex="0">Sony Bravia Theatre Quad (HT-A9M2)
                                                 Premium Soundbar System with 360 SSM, Wireless Multi Dimensional</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R100,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R99,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R100,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R99,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8293,24 +8297,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/xbox-series-s-starter-bundle-with-3-months-game-pass-ultimate-gaming-console"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71nfxzyevel-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71nfxzyevel-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #9A3B00 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#9A3B00 !important"}}>
                                             Sale
 
 
@@ -8319,63 +8323,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/159"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/xbox-series-s-starter-bundle-with-3-months-game-pass-ultimate-gaming-console"
-                                                class="link text-line-2" tabindex="0">Xbox Series S Starter Bundle With
+                                                className="link text-line-2" tabIndex="0">Xbox Series S Starter Bundle With
                                                 3 Months Game Pass Ultimate Gaming Console</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R54,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R53,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R54,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R53,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8383,24 +8387,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/crompton-surebreeze-personal-air-cooler-30l-4-way-air-deflection-and-high-density-honeycomb-pads"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/51hl26hub8l-sl1100.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51hl26hub8l-sl1100.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #AC2200 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#AC2200 !important"}}>
                                             Hot
 
 
@@ -8409,63 +8413,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/158"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/crompton-surebreeze-personal-air-cooler-30l-4-way-air-deflection-and-high-density-honeycomb-pads"
-                                                class="link text-line-2" tabindex="0">Crompton Surebreeze Personal Air
+                                                className="link text-line-2" tabIndex="0">Crompton Surebreeze Personal Air
                                                 Cooler-30L; 4-Way Air Deflection and High Density Honeycomb pads.</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R3,200.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R3,100.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R3,200.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R3,100.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8477,30 +8481,32 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="pills-Featured" role="tabpanel" aria-labelledby="pills-Featured-tab"
-                        tabindex="0">
-                        <div class="row g-12">
+                    <div className="tab-pane fade" id="pills-Featured" role="tabpanel" aria-labelledby="pills-Featured-tab"
+                        tabIndex="0">
+                        <div className="row g-12">
 
 
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8509,64 +8515,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/168"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                                class="link text-line-2" tabindex="0">Vidiem Vogue 3-Burner Gas
+                                                className="link text-line-2" tabIndex="0">Vidiem Vogue 3-Burner Gas
                                                 Cooktop/Hob | World's First Fully Removable Burner Assembly | 10Mm
                                                 Toughened Glass | 5Mm Thick Pan Support | Manual Ignition - Black</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,250.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,250.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8574,24 +8580,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8600,64 +8608,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/167"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                                class="link text-line-2" tabindex="0">Vidiem Mixer Grinder 608 A
+                                                className="link text-line-2" tabIndex="0">Vidiem Mixer Grinder 608 A
                                                 Tusker|Mixer grinder 750 watt with 3 Jars &amp; 1 Juicer Mixer Grinder|4
                                                 Leakproof Jars with self-lock for wet &amp; dry spices, chutneys</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8665,24 +8673,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8691,63 +8699,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/166"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                                class="link text-line-2" tabindex="0">TCL 248 cm (98 inches) 4K Ultra HD
+                                                className="link text-line-2" tabIndex="0">TCL 248 cm (98 inches) 4K Ultra HD
                                                 Smart QD-Mini LED Google TV 98C755 (Black)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R164,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R164,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8759,30 +8767,30 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="pills-On-sale" role="tabpanel" aria-labelledby="pills-On-sale-tab"
-                        tabindex="0">
-                        <div class="row g-12">
+                    <div className="tab-pane fade" id="pills-On-sale" role="tabpanel" aria-labelledby="pills-On-sale-tab"
+                        tabIndex="0">
+                        <div className="row g-12">
 
 
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #9A3B00 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#9A3B00 !important"}}>
                                             Sale
 
 
@@ -8791,64 +8799,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/169"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                                class="link text-line-2" tabindex="0">Samsung 23 L Solo Microwave Oven
+                                                className="link text-line-2" tabIndex="0">Samsung 23 L Solo Microwave Oven
                                                 (MS23A3513AK/TL, Black, Auto Cook Programs, Child Safety Lock, Memory
                                                 Feature, Deodorization, Ceramic Enamel Cavity with 10 year warranty)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/sports-nike">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Sports@Nike</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Sports@Nike</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R8,990.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R8,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R8,990.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R8,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8856,24 +8864,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8882,64 +8892,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/168"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                                class="link text-line-2" tabindex="0">Vidiem Vogue 3-Burner Gas
+                                                className="link text-line-2" tabIndex="0">Vidiem Vogue 3-Burner Gas
                                                 Cooktop/Hob | World's First Fully Removable Burner Assembly | 10Mm
                                                 Toughened Glass | 5Mm Thick Pan Support | Manual Ignition - Black</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,250.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,250.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -8947,24 +8957,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        
+            style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}
+            >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -8973,64 +8985,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/167"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                                class="link text-line-2" tabindex="0">Vidiem Mixer Grinder 608 A
+                                                className="link text-line-2" tabIndex="0">Vidiem Mixer Grinder 608 A
                                                 Tusker|Mixer grinder 750 watt with 3 Jars &amp; 1 Juicer Mixer Grinder|4
                                                 Leakproof Jars with self-lock for wet &amp; dry spices, chutneys</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R4,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R4,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9038,24 +9050,26 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                       
+                                    style={{  
+                                        backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg')"  ,
+                                        backgroundSize: "contain"  ,
+                                        backgroundPosition: "center"  ,
+                                        backgroundRepeat: "no-repeat",
+                                        backgroundColor: "#f0f0f0"  
+                                                                }}
+                                    >
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -9064,63 +9078,63 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/166"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                                class="link text-line-2" tabindex="0">TCL 248 cm (98 inches) 4K Ultra HD
+                                                className="link text-line-2" tabIndex="0">TCL 248 cm (98 inches) 4K Ultra HD
                                                 Smart QD-Mini LED Google TV 98C755 (Black)</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Riviera@Montecasino</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R164,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R164,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9132,30 +9146,31 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="pills-Trending" role="tabpanel" aria-labelledby="pills-Trending-tab"
-                        tabindex="0">
-                        <div class="row g-12">
+                    <div className="tab-pane fade" id="pills-Trending" role="tabpanel" aria-labelledby="pills-Trending-tab"
+                        tabIndex="0">
+                        <div className="row g-12">
 
 
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71csc3m2agl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{  
+                                            backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71csc3m2agl-sl1500.jpg')"  ,
+                                            backgroundSize: "contain"  ,
+                                            backgroundPosition: "center"  ,
+                                            backgroundRepeat: "no-repeat",
+                                            backgroundColor: "#f0f0f0"  
+                                                                    }}>
+                 
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -9164,64 +9179,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/135"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal"
-                                                class="link text-line-2" tabindex="0">iPhone 16 5G Mobile Phone with
+                                                className="link text-line-2" tabIndex="0">iPhone 16 5G Mobile Phone with
                                                 Camera Control, A18 Chip and a Big Boost in Battery Life. Works with
                                                 AirPods; Teal</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/robert-store">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Roberts@Store</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Roberts@Store</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R16,802.47</span>
-                                            <span class="text-heading text-md fw-semibold ">R16,750.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R16,802.47</span>
+                                            <span className="text-heading text-md fw-semibold ">R16,750.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9229,24 +9244,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/samsung-galaxy-s25-ultra-5g-ai-smartphone-titanium-gray-12gb-ram-256gb-storage-200mp-camera-s-pen-included-long-battery-life"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71rs4aer71l-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{  
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71rs4aer71l-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition: "center"  ,
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "#f0f0f0"  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -9255,64 +9270,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/137"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/samsung-galaxy-s25-ultra-5g-ai-smartphone-titanium-gray-12gb-ram-256gb-storage-200mp-camera-s-pen-included-long-battery-life"
-                                                class="link text-line-2" tabindex="0">Samsung Galaxy S25 Ultra 5G AI
+                                                className="link text-line-2" tabIndex="0">Samsung Galaxy S25 Ultra 5G AI
                                                 Smartphone (Titanium Gray, 12GB RAM, 256GB Storage), 200MP Camera, S Pen
                                                 Included, Long Battery Life</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/star-kist">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Star@Kist</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Star@Kist</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R30,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R29,500.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R30,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R29,500.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9320,24 +9335,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal-1"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/615o-nfqkdl-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/615o-nfqkdl-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #006554 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#006554 !important"}}>
                                             New
 
 
@@ -9346,64 +9361,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/136"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="https://ecbackend.cazhier.com/products/phone-16-128-gb-5g-mobile-phone-with-camera-control-a18-chip-and-a-big-boost-in-battery-life-works-with-airpods-teal-1"
-                                                class="link text-line-2" tabindex="0">iPhone 16 256 GB: 5G Mobile Phone
+                                                className="link text-line-2" tabIndex="0">iPhone 16 256 GB: 5G Mobile Phone
                                                 with Camera Control, A18 Chip and a Big Boost in Battery Life. Works
                                                 with AirPods; Black</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/robert-store">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Roberts@Store</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Roberts@Store</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R16,802.47</span>
-                                            <span class="text-heading text-md fw-semibold ">R16,750.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R16,802.47</span>
+                                            <span className="text-heading text-md fw-semibold ">R16,750.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9411,24 +9426,24 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div class="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
+                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
                                 data-aos-duration="200">
                                 <div
-                                    class="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
 
                                     <a href="http://127.0.0.1:8000/products/apple-ipad-pro-13-m4-ultra-retina-xdr-display-512gb-12mp-front-camera-12mp-back-camera-lidar-scanner-space-black"
-                                        class="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style="  
-                background-image: url('https://ecbackend.cazhier.com/storage/products-2/71wv5yk6ll-sl1500.jpg');  
-                background-size: contain;  
-                background-position: center;  
-                background-repeat: no-repeat;  
-                background-color: #f0f0f0;  
-            ">
-                                        <!-- code1 -->
+                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
+                                        style={{
+                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71wv5yk6ll-sl1500.jpg')"  ,
+                backgroundSize: "contain"  ,
+                backgroundPosition:" center"  ,
+                backgroundRepeat: "no-repeat"  ,
+                backgroundColor: "#f0f0f0",  
+                                        }}>
+                                        {/* <!-- code1 --> */}
                                         <span
-                                            class="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style="background-color: #AC2200 !important;">
+                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
+                                            style={{backgroundColor: "#AC2200 !important"}}>
                                             Hot
 
 
@@ -9437,64 +9452,64 @@ export default function Home() {
 
                                     </a>
                                     <div
-                                        class="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
+                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
                                     </div>
 
                                     <div
-                                        class="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
                                         <span
-                                            class="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" class="tp-product-action-btn-2 mywishlist
+                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                            <button type="button" className="tp-product-action-btn-2 mywishlist
                     tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
                                                 data-url="http://127.0.0.1:8000/wishlist/139"
                                                 data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
 
 
-                                                <i class="ph-fill ph-heart"></i>
+                                                <i className="ph-fill ph-heart"></i>
                                             </button>
                                         </span>
 
                                     </div>
 
-                                    <div class="product-card__content mt-10">
+                                    <div className="product-card__content mt-10">
 
-                                        <div class="flex-align gap-6">
-                                            <!-- <span class="text-xs fw-medium text-gray-500">4.8</span> -->
-                                            <span class="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span class="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    class="ph-fill ph-star"></i></span>
-                                            <span class="text-xs fw-medium text-gray-500">(0k)</span>
+                                        <div className="flex-align gap-6">
+                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
+                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
+                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                    className="ph-fill ph-star"></i></span>
+                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
                                         </div>
 
-                                        <h6 class="title text-sm fw-normal mt-12 mb-8 ">
+                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
                                             <a href="http://127.0.0.1:8000/products/apple-ipad-pro-13-m4-ultra-retina-xdr-display-512gb-12mp-front-camera-12mp-back-camera-lidar-scanner-space-black"
-                                                class="link text-line-2" tabindex="0">Apple iPad Pro 13″ (M4): Ultra
+                                                className="link text-line-2" tabIndex="0">Apple iPad Pro 13″ (M4): Ultra
                                                 Retina XDR Display, 512GB, 12MP Front Camera / 12MP Back Camera, LiDAR
                                                 Scanner, Space Black</a>
                                         </h6>
 
                                         <a href="http://127.0.0.1:8000/stores/robert-store">
-                                            <div class="flex-align gap-4">
-                                                <span class="text-tertiary-600 text-md d-flex"><i
-                                                        class="ph-fill ph-storefront"></i></span>
-                                                <span class="text-gray-500 text-xs">Roberts@Store</span>
+                                            <div className="flex-align gap-4">
+                                                <span className="text-tertiary-600 text-md d-flex"><i
+                                                        className="ph-fill ph-storefront"></i></span>
+                                                <span className="text-gray-500 text-xs">Roberts@Store</span>
                                             </div>
                                         </a>
-                                        <div class="mt-8">
+                                        <div className="mt-8">
 
-                                            <div class="progress w-100 bg-color-three rounded-pill h-4"
+                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
                                                 role="progressbar" aria-label="Basic example" aria-valuenow="0"
                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <div class="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style="width: 0%"></div>
+                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
+                                                    style={{width: "0%"}}></div>
                                             </div>
                                         </div>
 
-                                        <div class="product-card__price my-10">
+                                        <div className="product-card__price my-10">
                                             <span
-                                                class="text-gray-400 text-md fw-semibold text-decoration-line-through">R49,000.00</span>
-                                            <span class="text-heading text-md fw-semibold ">R48,000.00 <span
-                                                    class="text-gray-500 fw-normal">/Qty</span>
+                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R49,000.00</span>
+                                            <span className="text-heading text-md fw-semibold ">R48,000.00 <span
+                                                    className="text-gray-500 fw-normal">/Qty</span>
                                             </span>
                                         </div>
 
@@ -9506,12 +9521,12 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div class="tab-pane fade" id="pills-Top-rated" role="tabpanel"
-                        aria-labelledby="pills-Top-rated-tab" tabindex="0">
-                        <div class="row g-12">
+                    <div className="tab-pane fade" id="pills-Top-rated" role="tabpanel"
+                        aria-labelledby="pills-Top-rated-tab" tabIndex="0">
+                        <div className="row g-12">
 
 
-                            <div class="col-12 text-center">
+                            <div className="col-12 text-center">
                                 <p>No top rated products available.</p>
                             </div>
 
