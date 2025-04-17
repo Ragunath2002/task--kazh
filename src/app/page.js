@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import CountdownTimer from "./component/CountdownTimer.js"
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <main>
        {/* <!--==================== Preloader Start ====================--> */}
       {/* <!-- <div className="preloader">
-          <img src="assets/images/icon/preloader.gif" alt="">
+          <img src="assets/images/icon/preloader.gif" alt=""/>
       </div> --> */}
       {/* <!--==================== Preloader End ====================--> */}
 
@@ -22,7 +23,7 @@ export default function Home() {
 
       {/* <!-- ==================== Scroll to Top End Here ==================== --> */}
       <div className="progress-wrap">
-          <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <svg className="progress-circle svg-content" width={"100%"} height={"100%"} viewBox="-1 -1 102 102">
               <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
           </svg>
       </div>
@@ -6328,26 +6329,27 @@ export default function Home() {
                                 <h6 className="mb-20 wow bounceIn" style={{visibility: "visible", animationName: "bounceIn"}}>Apple
                                     AirPods Max, Over Ear Headphones</h6>
 
-                                <div className="countdown mt-20" id="countdown">
+                                {/* <div className="countdown mt-20" id="countdown">
                                     <ul className="countdown-list style-four flex-center flex-wrap">
                                         <li
                                             className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span className="days">294</span> Days
+                                            <span className="days">{timeLeft.days}</span> Days
                                         </li>
                                         <li
                                             className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span className="hours">7</span> Hours
+                                            <span className="hours">{timeLeft.hours}</span> Hours
                                         </li>
                                         <li
                                             className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span className="minutes">11</span> Min
+                                            <span className="minutes">{timeLeft.minutes}</span> Min
                                         </li>
                                         <li
                                             className="countdown-list__item flex-align flex-column text-sm fw-medium text-white rounded-circle bg-neutral-600">
-                                            <span className="seconds">43</span> Sec
+                                            <span className="seconds">{timeLeft.seconds}</span> Sec
                                         </li>
                                     </ul>
-                                </div>
+                                </div> */}
+                                <CountdownTimer />
 
                             </div>
                             {/* <!-- right image --> */}
@@ -7345,7 +7347,7 @@ export default function Home() {
                 <div className="trending-products-box rounded-16 overflow-hidden flex-between position-relative mb-10">
                     <div className="d-md-block d-none ps-xxl-5 ps-md-4 aos-init aos-animate" data-aos="zoom-in"
                         data-aos-duration="800">
-                        {/* <!-- <img src="https://ecbackend.cazhier.com/themes/ecomm/images/thumbs/trending-products-img1.png" alt=""> --> */}
+                        {/* <!-- <img src="https://ecbackend.cazhier.com/themes/ecomm/images/thumbs/trending-products-img1.png" alt=""/> --> */}
                         <img src="https://ecbackend.cazhier.com/storage/ads/trending-products-img1.png"
                             alt="bg card Image"/>
                     </div>
@@ -9542,6 +9544,951 @@ export default function Home() {
         </div>
     </section>
     {/* <!-- ========================= Trending Products End ================================ --> */}
+     <section className="Ad_product_two discount pt-20">
+        <div className="container container-lg">
+            <div className="row px-5 gy-4">
+                <div className="col-xl-6 px-10 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="600">
+                    <div
+                        className="discount-item rounded-16 overflow-hidden position-relative z-1 h-100 d-flex flex-column align-items-start justify-content-center">
+
+                        <img src="https://ecbackend.cazhier.com/storage/ad-product/discount-bg1-1.jpg"
+                            className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1"
+                            loading="lazy"/>
+
+                        <div className="w-100 flex-between gap-20">
+                            <div className="discount-item__content">
+                                <span className="fw-semibold text-tertiary-600 mb-20">
+                                    UP TO 30% OFF
+                                </span>
+
+
+
+
+                                <h6 className="mb-20">
+                                    <a href="http://127.0.0.1:8000/products/kaspersky-premium-total-security-ultimate-security-1-device-3-years-email-delivery-in-1-hour"
+                                        target="_blank" className="text-heading">Kaspersky | Premium - Total Security
+                                        (Ultimate Sec..</a>
+                                </h6>
+
+                                <a href="http://127.0.0.1:8000/products/kaspersky-premium-total-security-ultimate-security-1-device-3-years-email-delivery-in-1-hour"
+                                    target="_blank" className="btn btn-outline-black rounded-pill gap-8">
+                                    Shop Now
+                                </a>
+
+                            </div>
+
+
+
+                            <a href="http://127.0.0.1:8000/products/kaspersky-premium-total-security-ultimate-security-1-device-3-years-email-delivery-in-1-hour"
+                                target="_blank">
+                                <img src="https://ecbackend.cazhier.com/storage/products-2/61u3alnedpl-sl1500.jpg"
+                                    alt="Kaspersky | Premium - Total Security (Ultimate Security) | 1 Device | 3 Years | Email Delivery in 1 Hour"
+                                    className="dynamic-ad-product-image"/>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="col-xl-6 px-10 aos-init aos-animate" data-aos="zoom-in" data-aos-duration="600">
+                    <div
+                        className="discount-item rounded-16 overflow-hidden position-relative z-1 h-100 d-flex flex-column align-items-start justify-content-center">
+
+                        <img src="https://ecbackend.cazhier.com/storage/ad-product/discount-bg2-1.jpg"
+                            className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1"
+                            loading="lazy"/>
+
+                        <div className="w-100 flex-between gap-20">
+                            <div className="discount-item__content">
+                                <span className="fw-semibold text-tertiary-600 mb-20">
+                                    UP TO 30% OFF
+                                </span>
+
+
+
+
+                                <h6 className="mb-20">
+                                    <a href="http://127.0.0.1:8000/products/sony-god-of-war-ragnarok-ps5-game"
+                                        target="_blank" className="text-heading">Sony God Of War Ragnarok |PS5 Game</a>
+                                </h6>
+
+                                <a href="http://127.0.0.1:8000/products/sony-god-of-war-ragnarok-ps5-game"
+                                    target="_blank" className="btn btn-outline-black rounded-pill gap-8">
+                                    Shop Now 2
+                                </a>
+
+                            </div>
+
+
+
+                            <a href="http://127.0.0.1:8000/products/sony-god-of-war-ragnarok-ps5-game" target="_blank">
+                                <img src="https://ecbackend.cazhier.com/storage/products-2/81e5avym-l-sl1500.jpg"
+                                    alt="Sony God Of War Ragnarok |PS5 Game" className="dynamic-ad-product-image"/>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className=" featured_sells featured-products overflow-hidden py-20">
+        <div className="container container-lg">
+            <div className="row g-4  flex-wrap-reverse">
+                <div className="col-xxl-8   pe-10">
+                    <div className="featured_product_container">
+                        <button type="button" id="featured-products-prev"
+                            className="slick-prev deal_leftarrow slick-arrow hlo flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1"
+                            >
+                            <i className="ph ph-caret-left"></i>
+                        </button>
+
+                        <div className="border border-gray-100 p-12 rounded-16 bg-white ">
+                            <div className="section-heading mb-0">
+                                <div className="flex-between flex-wrap ">
+                                    <h5 className="mb-0 ">
+                                        Featured
+
+                                    </h5>
+                                    <div className="flex-align gap-16 animate_once
+                                        
+                                        ">
+                                        <a href="http://127.0.0.1:8000/products"
+                                            className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">
+                                            View All Deals
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row featured-product-slider ">
+                               
+                                <div className="col-xxl-6">
+                                    <div className="featured-products__sliders">
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6">
+                                    <div className="featured-products__sliders">
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-xxl-6">
+                                    <div className="featured-products__sliders">
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="" data-aos="fade-up" data-aos-duration="800">
+                                            <div
+                                        className="mt-10 product_group_card_thumb product-card d-flex mx-5 gap-26 p-16 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
+                                                <a href="product-details-two.html"
+                                                className="product_group_card_thumb product-card__thumb flex-center h-unset rounded-8 position-relative w-unset flex-shrink-0 p-24"
+                                                tabIndex="0" style={{backgroundColor: "#f0f0f0"}}>
+                                                    <span
+                                                        className="product-card__badge bg-danger-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sale
+                                                        50% </span>
+                                                        <div
+                                                className=" bg-white p-2 rounded-pill text-md position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
+                                                <span
+                                                    className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
+                                                    <button type="button" 
+                                                        >
+                                                        <i className="ph-fill ph-heart"></i>
+                                                    </button>
+
+                                                </span>
+                                            </div>
+                                            <img src="https://ecbackend.cazhier.com/storage/products-2/91x15nawal-sl1500-600x600.jpg" className="product_group_small" loading="lazy" alt="LEGO DC Batmobile: Batman vs. The Joker Chase 76224 Building Toy Set (438 Pieces)"/>
+                                                </a>
+                                                <div className="product-card__content my-20 flex-grow-1">
+                                                    <h6 className="title text-lg fw-semibold mb-12">
+                                                        <a href="product-details-two.html" className="link text-line-2"
+                                                            tabIndex="0">iPhone 15 Pro Warp Charge 30W Power Adapter</a>
+                                                    </h6>
+                                                    <div className="flex-align gap-6 mb-12">
+                                                        <span className="text-xs fw-medium text-gray-500">4.8</span>
+                                                        <span className="text-15 fw-medium text-warning-600 d-flex"><i
+                                                                className="ph-fill ph-star"></i></span>
+                                                        <span className="text-xs fw-medium text-gray-500">(17k)</span>
+                                                    </div>
+                                                    <div className="flex-align gap-4">
+                                                        <span className="text-main-two-600 text-md d-flex"><i
+                                                                className="ph-fill ph-storefront"></i></span>
+                                                        <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
+                                                    </div>
+                                                    <div className="product-card__price my-20">
+                                                        <span
+                                                            className="text-gray-400 text-md fw-semibold text-decoration-line-through">
+                                                            $28.99</span>
+                                                        <span className="text-heading text-md fw-semibold ">$14.99 <span
+                                                                className="text-gray-500 fw-normal">/Qty</span> </span>
+                                                    </div>
+    
+                                                    {/* <!-- <a href="cart.html"
+                                                        className="product-card__cart btn bg-gray-50 text-heading hover-bg-main-600 hover-text-white py-11 px-24 rounded-8 flex-center gap-8 fw-medium"
+                                                        tabIndex="0">
+                                                        Add To Cart <i className="ph ph-shopping-cart"></i>
+                                                    </a> --> */}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="button" id="featured-products-next"
+                            className="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1"
+                            >
+                            <i className="ph ph-caret-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="col-xxl-4   ps-10">
+                    <div
+                        className="position-relative rounded-16 bg-light-purple overflow-hidden p-28 pb-0 z-1 text-center featured-card ad">
+                        <img src="https://ecbackend.cazhier.com/themes/ecomm/images/bg/featured-product-bg.png" alt=""
+                            className="position-absolute inset-block-start-0 inset-inline-start-0 z-n1 w-100 h-100 cover-img"/>
+
+
+                            <div className="py-xl-4 text-center">
+                            <span>
+                                <a className="text-md mb-20 text-white"
+                                    href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black">Vidiem
+                                    Vogue 3-Burner Gas Cooktop/Hob | World's First Fully Removable Burner Assembly |
+                                    10Mm Toughened Glass | 5Mm Thick Pan Support | Manual Ignition - Black</a>
+                            </span>
+                            <div className="flex-center gap-12 text-white">
+                                <span className="">
+
+                                    FROM
+                                </span>
+
+                                <h4 className="mb-8 text-white">
+
+                                    R4,250.00
+                                </h4>
+
+                                <span
+                                className="badge-style-two position-relative me-8 bg-main-two-600 text-white text-sm py-2 px-8 rounded-4">
+                                    -1%
+                                </span>
+                            </div>
+
+                            <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
+                            className="mt-16 mb-10 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
+                            tabIndex="0">
+                                Shop Now
+                                <span className="icon text-xl d-flex"><i className="ph ph-arrow-right"></i></span>
+                            </a>
+                        </div>
+
+
+                        <a
+                            href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black">
+                            <img src="https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg"
+                                alt="Featured bottom Image" 
+                                /></a>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section className="tell_me_more shipping mb-20" id="tellmemore">
+        <div className="container container-lg">
+            <div className="row g-4 flex-wrap-reverse">
+
+                <div className="col-xxl-12">
+                    <div className="border border-gray-100 p-12 rounded-16 bg-white">
+                        <div className="section-heading mb-10">
+                            <div className="flex-between flex-wrap gap-8">
+                                <h5 className="mb-0">
+                                    How does C-Angelx work?
+                                </h5>
+                                {/* <!-- <h5 className="mb-0 wow bounceInLeft">Most wished for in Customer</h5> --> */}
+                                <div className="flex-align gap-16 wow bounceInRight"
+                                    style={{visibility:" hidden", animationName: "none"}}>
+                                    {/* <!-- <a href="#"
+                            className="text-sm fw-medium text-gray-700 hover-text-main-600 hover-text-decoration-underline">View
+                            All Products</a> --> */}
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row  px-5 ">
+                            <div className="col-xxl-4 px-5 col-sm-6 mb-10 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="400">
+                                <div className="shipping-item gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0 "><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/shop.png" loading="lazy"
+                                            alt=""/>
+                                    </span>
+                                    <div className="">
+                                        <h6 className="my-16">Shop, Sell and Support </h6>
+                                        <span className="text-sm text-heading">C-Angelx enables individual Patrons
+                                            (customers,
+                                            supporters, etc) to follow listed merchants &amp; NPOs of their choice on
+                                            this
+                                            platform - &amp;
+                                            shop online, place lay-buys, or donate to any of the listed NPOs they
+                                            like</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-4 px-5 col-sm-6 mb-10 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="600">
+                                <div className="shipping-item  gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0"><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/give.png" loading="lazy"
+                                            alt="Business Efficiencies"/></span>
+                                    <div className="">
+                                        <h6 className="my-16"> Business Efficiencies</h6>
+                                        <span className="text-sm text-heading">You are also able to create an online
+                                            merchant &amp;
+                                            sell
+                                            online, or an NPO (cause) account for superior fundraising &amp; receiving
+                                            donations
+                                            online
+                                            safely. Add your staff as subordinates to upload inventory &amp; process
+                                            sales’
+                                            while you
+                                            manage the business...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-4 px-5 col-sm-6 mb-10 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="800">
+                                <div className="shipping-item  gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0"><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/one.png" loading="lazy"
+                                            alt="One Stop Solution"/></span>
+                                    <div className="">
+                                        <h6 className="my-16">One Stop Solution</h6>
+                                        <span className="text-sm text-heading">
+                                            C-Angelx has everything figured out for your merchant:
+                                            DHL Courier services can collect directly from your shop &amp; deliver
+                                            directly to
+                                            your
+                                            customer’s door, securely &amp; safely. No Hassles!
+                                            <br />
+                                            A merchant can optionally use its in-house courier service or other third
+                                            party
+                                            service instead of DHL, but set fixed courier fees paid by its customers.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-4 col-sm-6 mb-10 px-5 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="1000">
+                                <div className="shipping-item  gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0"><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/safe.png" loading="lazy"
+                                            alt="Safe and Secured"/></span>
+                                    <div className="">
+                                        <h6 className="my-16">Safe and Secured</h6>
+                                        <span className="text-sm text-heading">C-Angelx is designed with security in mind,
+                                            &amp;
+                                            further
+                                            hosted in highly secure &amp; reliable global servers’ as a
+                                            Global-Platform.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-4 col-sm-6 mb-10 px-5 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="1000">
+                                <div className="shipping-item  gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0"><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/quick.png" loading="lazy"
+                                            alt="Quick and Easy"/></span>
+                                    <div className="">
+                                        <h6 className="my-16">Quick and Easy</h6>
+                                        <span className="text-sm text-heading">We have partnered with known and trusted 3rd
+                                            party
+                                            suppliers in the global ecommerce industry – for secure transactions, and
+                                            reliable
+                                            courier services.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xxl-4 col-sm-6 mb-10 px-5 aos-init aos-animate" data-aos="zoom-in"
+                                data-aos-duration="1000">
+                                <div className="shipping-item  gap-16 rounded-16 bg-main-50 hover-bg-main-50 transition-2">
+                                    <span
+                                        className="w-56 h-56 flex-center rounded-circle  text-white text-32 flex-shrink-0"><img
+                                            src="https://ecbackend.cazhier.com/storage/extras/how.png" loading="lazy"
+                                            alt="So how much"/></span>
+                                    <div className="">
+                                        <h6 className="my-16">So how much</h6>
+                                        <span className="text-sm text-heading">There are No fixed monthly fees on merchants,
+                                            but
+                                            a 5%
+                                            commission for each sale - plus the separate Payment gateway’s fee of 2.9 -
+                                            3.5%, (around 8.5% in total, which is still
+                                            lower than the 10 to 18% charged by other platforms.). NPOs
+                                            (causes) are exempt of our fee, except of the payment gateway’s fee.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div className="newsletter-two py-5 overflow-hidden aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+        <div className="container container-lg">
+            <div className="flex-between gap-20 flex-wrap">
+                <div className="flex-align gap-22 align-items-center">
+                    <span className="d-flex">
+                        <img src="https://ecbackend.cazhier.com/storage/envelop.png" loading="lazy" alt=""/>
+                    </span>
+                    <span className="d-flex align-items-center text-white h5 fw-medium mb-0">
+                        Subscribe to our Newsletter
+                    </span>
+                </div>
+                <form action="#" className="newsletter-two__form w-50">
+                    <div className="flex-align gap-16">
+
+
+                        <input type="text" className="common-input style-two rounded-8 flex-grow-1 py-14"
+                            placeholder="Enter your email address"/>
+                        <button type="submit" className="btn 
+                                                btn_subscribe
+                                            
+                                            flex-shrink-0 rounded-8 py-16">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer className="footer main_footer pt-40 pb-20">
+        <div className="container container-lg">
+            <div className="" style={{padding: "0px 20px;"}}>
+                <div className="row">
+
+                    <div className="row">
+                        <div className="col-lg-4 col-md-12 col-sm-12 col-12 footer_desc_wrapper">
+
+                            <div className="footer-item footer_subwrap">
+                                <div className="footer-item__logo">
+
+
+                                    <div className="logo">
+                                        <a href="http://127.0.0.1:8000" className="user_dashboard_logo">
+                                            <img src="https://ecbackend.cazhier.com/storage/logo/cangelxlogo1.png"
+                                                style={{height: "47px"}} alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p className="footer_description mb-24" style={{width: "100"}}>Our next generation marketplace
+                                    makes Online shopping
+                                    far more interactive and collaborative between shoppers to
+                                    Merchants, with items such as mobile phones, Games, PC &amp; Laptops, Electronic
+                                    appliances, fashion, wines, etc.
+                                    all available with multiple purchasing options.</p>
+
+
+                            </div>
+                        </div>
+                        <div className="col-lg-8">
+                            <div className="row">
+                                <div className="col-lg-3 col-md-6 col-sm-6 col-6 menus_footer pl-20">
+                                    <div className="footer-item">
+                                        <h6 className="footer-item__title text-md">Who are We</h6>
+                                        <ul className="footer-menu">
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/about">
+                                                    About us
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/contact">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-3 col-md-6 col-sm-6 col-6 menus_footer">
+                                    <div className="footer-item">
+                                        <h6 className="footer-item__title text-md">Terms of Use</h6>
+                                        <ul className="footer-menu">
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/terms-and-conditions">
+                                                    Terms and Conditions
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/privacy-policy">
+                                                    Privacy Policy
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/contact">
+                                                    Advertisement
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-3 col-md-6 col-sm-6 col-6 menus_footer">
+                                    <div className="footer-item">
+
+                                        <h6 className="footer-item__title text-md">Personalization</h6>
+                                        <ul className="footer-menu">
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/user/edit-profile">
+                                                    Profile
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/customer/address">
+                                                    Location settings
+                                                </a>
+                                            </li>
+                                            <li className="mb-16">
+                                                <a className="text-gray-600 hover-text-main-600 text-sm"
+                                                    href="http://127.0.0.1:8000/vendor/manage-business">
+                                                    Sell on C-Angelx
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-3 col-md-4 col-sm-6 col-6 pt-lg-0 follow_us_footer menus_footer">
+                                    <div className="footer-item">
+
+                                        <h6 className="footer-item__title text-md">Follow us on</h6>
+
+
+
+                                        <ul className="flex-align gap-16 ">
+
+                                            <li
+                                                className="w-44 h-44 flex-center text-main-two-600 soc text-xl rounded-8 bg-main-50 hover-bg-main-50 hover-text-white">
+                                                <a href="facebook" title="facebook" target="_blank"
+                                                    style={{backgroundColor: "rgba(60, 99, 42, 0) !important",color: "rgb(17, 85, 204) !important"}}
+                                                    className="">
+                                                    <svg className="icon" xmlns="http://www.w3.org/2000/svg" width={24}
+                                                        height={24} viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" strokeWidth={2} strokeLinecap="round"
+                                                        strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                                                        </path>
+                                                    </svg> </a>
+                                            </li>
+
+                                            <li
+                                                className="w-44 h-44 flex-center text-main-two-600 soc text-xl rounded-8 bg-main-50 hover-bg-main-50 hover-text-white">
+                                                <a href="twitter" title="twitter" target="_blank"
+                                                    style={{backgroundColor:" rgba(69, 104, 52, 0) !important",color:" rgb(17, 85, 204) !important"}}
+                                                    className="">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x={"0px"} y={"0px"} width={24} height={24} viewBox="0 0 50 50" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+                                                        <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+
+                                            <li
+                                                className="w-44 h-44 flex-center text-main-two-600 soc text-xl rounded-8 bg-main-50 hover-bg-main-50 hover-text-white">
+                                                <a href="instagram" title="instagram" target="_blank"
+                                                    style={{backgroundColor:" rgba(80, 115, 64, 0) !important",color:" rgb(17, 85, 204) !important"}}
+                                                    className="">
+                                                    <svg className="icon" xmlns="http://www.w3.org/2000/svg" width={24}
+                                                        height={24} viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" strokeWidth={2} strokeLinecap="round"
+                                                        strokeLinejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                                                        </path>
+                                                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                                        <path d="M16.5 7.5l0 .01"></path>
+                                                    </svg> </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row justify-content-end align-items-center text-center">
+
+                                <div className="col-lg-8">
+                                    <ul className="flex-align gap-16 justify-content-center align-items-center ">
+
+                                        <li className="h-80 flex-center text-main-two-600 soc text-xl  hover-text-white">
+                                            <a>
+                                                <h6 className="mb-0 third_party">Third Party Partners:</h6>
+                                            </a>
+                                        </li>
+                                        <li
+                                            className=" h-80 flex-center text-main-two-600 soc text-xl rounded-8   hover-text-white">
+                                            <a href="https://www.dhl.com/za-en/home/dhl-for-business.html#parsysPath_ms_mf_container"
+                                                target="_blank">
+                                                <img style={{height: "60px"}}
+                                                    src="https://ecbackend.cazhier.com/storage/dhl-logo.png" alt=""
+                                                    className="footer_payment_logo"/>
+                                            </a>
+                                        </li>
+
+                                        <li
+                                            className=" h-80 flex-center text-main-two-600 soc text-xl rounded-8   hover-text-white">
+                                            <a href="https://www.payfast.co.za/registration" target="_blank">
+                                                <img style={{height: "60px"}}
+                                                    src="https://ucarecdn.com/8736b763-b248-418f-a77e-341df4cda7fc/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                                                    alt="" className="footer_payment_logo"/>
+                                            </a>
+                                        </li>
+
+                                        <li
+                                            className=" h-80 flex-center text-main-two-600 soc text-xl rounded-8   hover-text-white">
+                                            <a href="https://www.paypal.com/in/webapps/mpp/account-selection"
+                                                target="_blank">
+                                                <img style={{height: "60px"}}
+                                                    src="https://ecbackend.cazhier.com/storage/paypal_2014_logo.png"
+                                                    alt="" className="footer_payment_logo"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </footer>
+    <div className="bottom-footer bg-color-three py-8">
+        <div className="container container-lg">
+            <div className="bottom-footer__inner flex-between flex-wrap gap-16  text-sm">
+                <p className="bottom-footer__text  text-dark">Copyright© 2018 – 2025. All rights reserved. <a
+                        href="https://cangelx.com/">cangelx.com</a></p>
+
+                <div className="flex-align gap-8 flex-wrap  ">
+
+                    <span className="text-heading text-sm text-dark"></span>
+                    <img src="https://ecbackend.cazhier.com/storage/payment-method.png" alt=""/>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
       </main>
     </>
   );

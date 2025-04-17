@@ -13377,6 +13377,7 @@ iframe[src*="youtube"] {
     padding: 30px 10px;
     border-radius: 0 !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    color: #000;
 }
 #deal-week-prev {  
     left: 5px; 
