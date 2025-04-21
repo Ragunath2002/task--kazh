@@ -2,8 +2,276 @@ import Image from "next/image";
 import CountdownTimer from "../component/CountdownTimer.js"
 import Footer from "../component/footer.js"
 import Header from "../component/header.js"
+import Card from "@/component/card.js";
+import Trendingcard from "@/component/trendingcard.js";
 
 export default function Home() {
+
+    const products = [
+        {
+          image: 'assets/images/thumbs/product-two-img1.png',
+          title: 'Taylor Farms Broccoli Florets Vegetables',
+          rating: '4.8',
+          ratingCount: '17k',
+          seller: 'Lucky Supermarket123',
+          sold: 18,
+          total: 35,
+          oldPrice: '28.99',
+          newPrice: '14.99',
+          badge : "Sold",
+          link : "product-details-two.html"
+        },
+        {
+          image: 'assets/images/thumbs/product-two-img1.png',
+          title: 'Taylor Farms Broccoli Florets Vegetables',
+          rating: '4.8',
+          ratingCount: '17k',
+          seller: 'Lucky Supermarket',
+          sold: 18,
+          total: 35,
+          oldPrice: '28.99',
+          newPrice: '14.99',
+          badge : "Sold",
+          link : "product-details-two.html"
+        },
+        {
+          image: 'assets/images/thumbs/product-two-img1.png',
+          title: 'Taylor Farms Broccoli Florets Vegetables',
+          rating: '4.8',
+          ratingCount: '17k',
+          seller: 'Lucky Supermarket',
+          sold: 18,
+          total: 35,
+          oldPrice: '28.99',
+          newPrice: '14.99',
+          badge : "Sold",
+          link : "product-details-two.html"
+        },
+        {
+          image: 'assets/images/thumbs/product-two-img1.png',
+          title: 'Taylor Farms Broccoli Florets Vegetables',
+          rating: '4.8',
+          ratingCount: '17k',
+          seller: 'Lucky Supermarket',
+          sold: 18,
+          total: 35,
+          oldPrice: '28.99',
+          newPrice: '14.99',
+          badge : "Sold",
+          link : "product-details-two.html"
+        },
+        {
+            image: 'assets/images/thumbs/product-two-img1.png',
+            title: 'Taylor Farms Broccoli Florets Vegetables',
+            rating: '4.8',
+            ratingCount: '17k',
+            seller: 'Lucky Supermarket',
+            sold: 18,
+            total: 35,
+            oldPrice: '28.99',
+            newPrice: '14.99',
+            badge : "Sold",
+            link : "product-details-two.html"
+          },
+          {
+            image: 'assets/images/thumbs/product-two-img1.png',
+            title: 'Taylor Farms Broccoli Florets Vegetables',
+            rating: '4.8',
+            ratingCount: '17k',
+            seller: 'Lucky Supermarket',
+            sold: 18,
+            total: 35,
+            oldPrice: '28.99',
+            newPrice: '14.99',
+            badge : "Sold",
+            link : "product-details-two.html"
+          },
+          {
+            image: 'assets/images/thumbs/product-two-img1.png',
+            title: 'Taylor Farms Broccoli Florets Vegetables',
+            rating: '4.8',
+            ratingCount: '17k',
+            seller: 'Lucky Supermarket',
+            sold: 18,
+            total: 35,
+            oldPrice: '28.99',
+            newPrice: '14.99',
+            badge : "Sold",
+            link : "product-details-two.html"
+          },
+      ];
+      
+      const trendingproducts = [
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg',
+          badge: 'Sale',
+          badgeColor: '#9A3B00 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Samsung 23 L Solo Microwave Oven (MS23A3513AK/TL...)',
+          productUrl: 'http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty',
+          storeUrl: 'http://127.0.0.1:8000/stores/sports-nike',
+          storeName: 'Sports@Nike',
+          progress: 0,
+          oldPrice: 'R8,990.00',
+          newPrice: 'R8,000.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Vidiem Vogue 3-Burner Gas Cooktop/Hob...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'Riviera@Montecasino',
+          progress: 0,
+          oldPrice: 'R4,300.00',
+          newPrice: 'R4,250.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Vidiem Mixer Grinder 608 A Tusker...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'Riviera@Montecasino',
+          progress: 0,
+          oldPrice: 'R4,999.00',
+          newPrice: 'R4,500.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'TCL 248 cm (98 inches) 4K Ultra HD Smart QD-Mini LED Google TV...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'Riviera@Montecasino',
+          progress: 0,
+          oldPrice: 'R165,000.00',
+          newPrice: 'R164,000.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/3792e6d9-e64d-48a4-b16c-304d325ac1e0-cr00800800-pt0-sx220-v1.jpeg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'INR 250 Steam Wallet Code (Email Delivery)',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R90.00',
+          newPrice: 'R80.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/71md9ggyf6l-sl1500.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Xbox Game Pass Ultimate: 1 Month Membership (Digital Code)',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R125.00',
+          newPrice: 'R120.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/91o6fcnfxdl-sl1500.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Far Cry-3 PC Game DVD For Windows',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R120.00',
+          newPrice: 'R100.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/61jaihpn07l-sl1500.jpg',
+          badge: 'Hot',
+          badgeColor: '#C0392B !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Microsoft Windows 10 Professional',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R300.00',
+          newPrice: 'R250.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/81omhffs-hl-sl1500.jpg',
+          badge: 'New',
+          badgeColor: '#006554 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Samsung 189 cm (75 inches) D Series Crystal 4K Vivid Pro...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R199,999.00',
+          newPrice: 'R195,000.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/71dvqgjx0-l-sl1500.jpg',
+          badge: 'Sale',
+          badgeColor: '#9A3B00 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Sony Bravia Theatre Quad Premium Soundbar System...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R100,000.00',
+          newPrice: 'R99,500.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/71nfxzyevel-sl1500.jpg',
+          badge: 'Sale',
+          badgeColor: '#9A3B00 !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Xbox Series S Starter Bundle with 3 Months Game Pass...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R64,000.00',
+          newPrice: 'R53,500.00'
+        },
+        {
+          image: 'https://ecbackend.cazhier.com/storage/products-2/51hl26hub8l-sl1100.jpg',
+          badge: 'Hot',
+          badgeColor: '#C0392B !important',
+          rating: '0.0',
+          ratingCount: '0k',
+          title: 'Crompton Suezbreeze Personal Air Cooler 30L...',
+          productUrl: '#',
+          storeUrl: '#',
+          storeName: 'C-Angelx_cares@JhB',
+          progress: 0,
+          oldPrice: 'R3,200.00',
+          newPrice: 'R3,100.00'
+        }
+      ];
+      
   return (
     <>
       
@@ -4236,490 +4504,9 @@ export default function Home() {
                             </button>
 
                             <div className="deals-week-slider arrow-style-two pt-0">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2" tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4" role="progressbar"
-                                                aria-label="Basic example" aria-valuenow="35" aria-valuemin="0"
-                                                aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
+                                {products.map((product, index) => (
+                                        <Card key={index} {...product} />
+                                    ))}
                             </div>
 
                             <button type="button" id="deal-week-next"
@@ -4795,328 +4582,9 @@ export default function Home() {
 
 
                             <div className="top-selling-product-slider arrow-style-two">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="product-details-two.html"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative">
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0">Sold
-                                        </span>
-                                        <img src="assets/images/thumbs/product-two-img1.png" alt=""
-                                            className="w-auto max-w-unset"/>
-                                    </a>
-                                    <div className="product-card__content mt-16">
-                                        <div className="flex-align gap-6">
-                                            <span className="text-xs fw-medium text-gray-500">4.8</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(17k)</span>
-                                        </div>
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="product-details-two.html" className="link text-line-2"
-                                                tabIndex="0">Taylor
-                                                Farms Broccoli Florets Vegetables</a>
-                                        </h6>
-                                        <div className="flex-align gap-4">
-                                            <span className="text-tertiary-600 text-md d-flex"><i
-                                                    className="ph-fill ph-storefront"></i></span>
-                                            <span className="text-gray-500 text-xs">By Lucky Supermarket</span>
-                                        </div>
-                                        <div className="mt-8">
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="35"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                            <span className="text-gray-900 text-xs fw-medium mt-8">Sold: 18/35</span>
-                                        </div>
-
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">
-                                                $28.99</span>
-                                            <span className="text-heading text-md fw-semibold ">$14.99 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span> </span>
-                                        </div>
-                                    </div>
-                                </div>
+                            {products.map((product, index) => (
+                                        <Card key={index} {...product} />
+                                    ))}
                             </div>
                             <button type="button" id="top-selling-next"
                                 className="slick-next deal_rightarrow slick-arrow flex-center rounded-circle hover-border-neutral-600 text-xl hover-bg-neutral-600 hover-text-white transition-1">
@@ -5248,1103 +4716,10 @@ export default function Home() {
 
 
 
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71jffnoticl-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#9A3B00 !important"}}>
-                                            Sale
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/169"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/samsung-23-l-solo-microwave-oven-ms23a3513aktl-black-auto-cook-programs-child-safety-lock-memory-feature-deodorization-ceramic-enamel-cavity-with-10-year-warranty"
-                                                className="link text-line-2" tabIndex="0">Samsung 23 L Solo Microwave Oven
-                                                (MS23A3513AK/TL, Black, Auto Cook Programs, Child Safety Lock, Memory
-                                                Feature, Deodorization, Ceramic Enamel Cavity with 10 year warranty)</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/sports-nike">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">Sports@Nike</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R8,990.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R8,000.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        
-            style={{  
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51qaswl4jrl-sl1442.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition: "center"  ,
-                backgroundRepeat: "no-repeat",
-                backgroundColor: "#f0f0f0"  
-                                        }}
-            >
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/168"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/vidiem-vogue-3-burner-gas-cooktophob-worlds-first-fully-removable-burner-assembly-10mm-toughened-glass-5mm-thick-pan-support-manual-ignition-black"
-                                                className="link text-line-2" tabIndex="0">Vidiem Vogue 3-Burner Gas
-                                                Cooktop/Hob | World's First Fully Removable Burner Assembly | 10Mm
-                                                Toughened Glass | 5Mm Thick Pan Support | Manual Ignition - Black</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,300.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R4,250.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        
-            style={{  
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81c2dwbtmfl-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition: "center"  ,
-                backgroundRepeat: "no-repeat",
-                backgroundColor: "#f0f0f0"  
-                                        }}
-            >
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/167"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/vidiem-mixer-grinder-608-a-tuskermixer-grinder-750-watt-with-3-jars-1-juicer-mixer-grinder4-leakproof-jars-with-self-lock-for-wet-dry-spices-chutneys"
-                                                className="link text-line-2" tabIndex="0">Vidiem Mixer Grinder 608 A
-                                                Tusker|Mixer grinder 750 watt with 3 Jars &amp; 1 Juicer Mixer Grinder|4
-                                                Leakproof Jars with self-lock for wet &amp; dry spices, chutneys</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R4,999.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R4,500.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/719yjcos-al-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/166"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/tcl-248-cm-98-inches-4k-ultra-hd-smart-qd-mini-led-google-tv-98c755-black"
-                                                className="link text-line-2" tabIndex="0">TCL 248 cm (98 inches) 4K Ultra HD
-                                                Smart QD-Mini LED Google TV 98C755 (Black)</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/riviera-montecasino">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">Riviera@Montecasino</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R165,000.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R164,000.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="https://ecbackend.cazhier.com/products/nr-250-steam-wallet-codedigital-code-email-delivery-within-2-hours"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/3792e6d9-e64d-48a4-b16c-304d325ac1e0-cr00800800-pt0-sx220-v1.jpeg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#AC2200 !important"}}>
-                                            Hot
-
-
-                                        </span>
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/165"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="https://ecbackend.cazhier.com/products/nr-250-steam-wallet-codedigital-code-email-delivery-within-2-hours"
-                                                className="link text-line-2" tabIndex="0">INR 250 Steam Wallet Code(Digital
-                                                Code-Email Delivery within 2 hours)</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R90.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R80.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/xbox-game-pass-ultimate-1-month-membership-digital-code"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71md9ggyf6l-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/164"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/xbox-game-pass-ultimate-1-month-membership-digital-code"
-                                                className="link text-line-2" tabIndex="0">Xbox Game Pass Ultimate : 1 Month
-                                                Membership (Digital Code)</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R125.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R120.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/far-cry-3-pc-game-dvd-for-windows"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/91o6fcnfxdl-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/163"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/far-cry-3-pc-game-dvd-for-windows"
-                                                className="link text-line-2" tabIndex="0">Far Cry-3 Pc Game DVD For
-                                                Windows</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R120.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R100.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/microsoft-windows-10-professional-8-gb-32bit64bit-english-intl-for-1-pc-laptop-user-32-and-64-bits-on-usb-30-included-full-retail-pack-multicolor"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/61jaihpn07l-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#AC2200 !important"}}>
-                                            Hot
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/162"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/microsoft-windows-10-professional-8-gb-32bit64bit-english-intl-for-1-pc-laptop-user-32-and-64-bits-on-usb-30-included-full-retail-pack-multicolor"
-                                                className="link text-line-2" tabIndex="0">Microsoft Windows 10 Professional
-                                                8 GB, 32Bit/64Bit English INTL For 1 PC Laptop/ User: 32 And 64 Bits On
-                                                USB 3.0 Included - Full Retail Pack, Multicolor</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R300.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R250.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/samsung-189-cm-75-inches-d-series-crystal-4k-vivid-pro-ultra-hd-smart-led-tv-ua75due77akxxl-black"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/81omhffs-hl-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#006554 !important"}}>
-                                            New
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/161"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/samsung-189-cm-75-inches-d-series-crystal-4k-vivid-pro-ultra-hd-smart-led-tv-ua75due77akxxl-black"
-                                                className="link text-line-2" tabIndex="0">Samsung 189 cm (75 inches) D
-                                                Series Crystal 4K Vivid Pro Ultra HD Smart LED TV UA75DUE77AKXXL
-                                                (Black)</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R199,999.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R195,000.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/sony-bravia-theatre-quad-ht-a9m2-premium-soundbar-system-with-360-ssm-wireless-multi-dimensional"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71dvqgjx0-l-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#9A3B00 !important"}}>
-                                            Sale
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/160"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/sony-bravia-theatre-quad-ht-a9m2-premium-soundbar-system-with-360-ssm-wireless-multi-dimensional"
-                                                className="link text-line-2" tabIndex="0">Sony Bravia Theatre Quad (HT-A9M2)
-                                                Premium Soundbar System with 360 SSM, Wireless Multi Dimensional</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R100,000.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R99,500.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/xbox-series-s-starter-bundle-with-3-months-game-pass-ultimate-gaming-console"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/71nfxzyevel-sl1500.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#9A3B00 !important"}}>
-                                            Sale
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/159"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/xbox-series-s-starter-bundle-with-3-months-game-pass-ultimate-gaming-console"
-                                                className="link text-line-2" tabIndex="0">Xbox Series S Starter Bundle With
-                                                3 Months Game Pass Ultimate Gaming Console</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R54,000.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R53,500.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-xxl-2 col-xl-3 col-lg-4 col-sm-6 aos-init aos-animate" data-aos="fade-up"
-                                data-aos-duration="200">
-                                <div
-                                    className="grid_blade grid_product product-card h-100 p-10 border border-gray-100 hover-border-main-600 rounded-16 position-relative transition-2">
-
-                                    <a href="http://127.0.0.1:8000/products/crompton-surebreeze-personal-air-cooler-30l-4-way-air-deflection-and-high-density-honeycomb-pads"
-                                        className="product-card__thumb grid_product flex-center rounded-8 position-relative"
-                                        style={{
-                backgroundImage: "url('https://ecbackend.cazhier.com/storage/products-2/51hl26hub8l-sl1100.jpg')"  ,
-                backgroundSize: "contain"  ,
-                backgroundPosition:" center"  ,
-                backgroundRepeat: "no-repeat"  ,
-                backgroundColor: "#f0f0f0",  
-                                        }}>
-                                        {/* <!-- code1 --> */}
-                                        <span
-                                            className="product-card__badge bg-main-600 px-8 py-4 text-sm text-white position-absolute inset-inline-start-0 inset-block-start-0"
-                                            style={{backgroundColor: "#AC2200 !important"}}>
-                                            Hot
-
-
-                                        </span>
-
-
-                                    </a>
-                                    <div
-                                        className="position-absolute inset-block-start-0 inset-inline-start-0 mt-16 ms-16 z-1 d-flex flex-column gap-8">
-                                    </div>
-
-                                    <div
-                                        className="bg-white p-2 rounded-pill z-1 position-absolute inset-inline-end-0 inset-block-start-0 me-16 mt-16 shadow-sm">
-                                        <span
-                                            className="text-main-two-600 w-40 h-40 d-flex justify-content-center align-items-center bg-white rounded-circle shadow-sm text-lg fw-semibold">
-                                            <button type="button" className="tp-product-action-btn-2 mywishlist
-                    tp-product-add-to-wishlist-btn" data-bb-toggle="add-to-wishlist" title="Add to wishlist"
-                                                data-url="http://127.0.0.1:8000/wishlist/158"
-                                                data-add-text="ph ph-heart" data-remove-text="ph-fill ph-heart">
-
-
-                                                <i className="ph-fill ph-heart"></i>
-                                            </button>
-                                        </span>
-
-                                    </div>
-
-                                    <div className="product-card__content mt-10">
-
-                                        <div className="flex-align gap-6">
-                                            {/* <!-- <span className="text-xs fw-medium text-gray-500">4.8</span> --> */}
-                                            <span className="text-xs fw-medium text-gray-500">0.0</span>
-                                            <span className="text-15 fw-medium text-warning-600 d-flex"><i
-                                                    className="ph-fill ph-star"></i></span>
-                                            <span className="text-xs fw-medium text-gray-500">(0k)</span>
-                                        </div>
-
-                                        <h6 className="title text-sm fw-normal mt-12 mb-8 ">
-                                            <a href="http://127.0.0.1:8000/products/crompton-surebreeze-personal-air-cooler-30l-4-way-air-deflection-and-high-density-honeycomb-pads"
-                                                className="link text-line-2" tabIndex="0">Crompton Surebreeze Personal Air
-                                                Cooler-30L; 4-Way Air Deflection and High Density Honeycomb pads.</a>
-                                        </h6>
-
-                                        <a href="http://127.0.0.1:8000/stores/c-angelx-cares-jhb">
-                                            <div className="flex-align gap-4">
-                                                <span className="text-tertiary-600 text-md d-flex"><i
-                                                        className="ph-fill ph-storefront"></i></span>
-                                                <span className="text-gray-500 text-xs">C-Angelx_cares@JhB</span>
-                                            </div>
-                                        </a>
-                                        <div className="mt-8">
-
-                                            <div className="progress w-100 bg-color-three rounded-pill h-4"
-                                                role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                                <div className="progress-bar bg-tertiary-600 rounded-pill"
-                                                    style={{width: "0%"}}></div>
-                                            </div>
-                                        </div>
-
-                                        <div className="product-card__price my-10">
-                                            <span
-                                                className="text-gray-400 text-md fw-semibold text-decoration-line-through">R3,200.00</span>
-                                            <span className="text-heading text-md fw-semibold ">R3,100.00 <span
-                                                    className="text-gray-500 fw-normal">/Qty</span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
+                        {trendingproducts.map((item, idx) => (
+        <Trendingcard key={idx} {...item} />
+      ))}
+ 
                         </div>
                     </div>
 
